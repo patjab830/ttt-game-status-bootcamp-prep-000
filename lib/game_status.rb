@@ -55,4 +55,5 @@ def winner(board)
     board[won[0]]
   else
     nil
+  end
 end
