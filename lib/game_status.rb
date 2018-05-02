@@ -25,9 +25,13 @@ end
 def full?(board)
   value = true
   board.each do |space|
-    value = value && space == " "
+    if space == " "
+      value = value && false
+    else
+      value = value && true
+    end
   end
-  value == 1 ? true : false
+  value
 end
 
 def draw?(board)
