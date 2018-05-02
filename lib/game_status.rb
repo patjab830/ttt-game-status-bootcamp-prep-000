@@ -49,11 +49,4 @@ def over?(board)
   end
 end
 
-def winner(board)
-  won = won?(board)
-  if won
-    board[won[0]]
-  else
-    nil
-  end
-end
+
