@@ -23,6 +23,7 @@ def won?(board)
 end
 
 def full?(board)
+  value = 1
   board.each do |space|
     if space == " "
       value = value * 0
