@@ -23,13 +23,9 @@ def won?(board)
 end
 
 def full?(board)
-  value = 1
+  value = true
   board.each do |space|
-    if space == " "
-      value = value * 0
-    else
-      value = value * 1
-    end
+    value = value && space != " "
   end
   value == 1 ? true : false
 end
